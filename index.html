@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="imagenes/Logo2.png" alt="logo de alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area"  cols="20" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos </h6>
+               
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button id="btn-copiar" class="btn-copiar"  onclick="btnCopiar()">Copiar</button>
+                                                        
+            </div>
+           
+        </section>
+
+        <section>
+            <textarea id="mensaje" class="mensaje" cols="30" rows="10" placeholder="Aqui aparecera el texto encriptado"></textarea>
+                       
+        </section>
+       
+    </main>
+
+    <script src="script.js"></script>
+
+    <script>
+        
+        var textarea = document.getElementById("mensaje");
+        var answer = document.getElementById("copyAnswer");
+        var copy   = document.getElementById("btn-copiar");
+        copy.addEventListener('click', function(e) {
+          
+           textarea.select(); 
+           try {
+            
+               var successful = document.execCommand('copy');
+         
+               if(successful) answer.innerHTML = 'Copiado!';
+               else answer.innerHTML = 'Incapaz de copiar!';
+           } catch (err) {
+               answer.innerHTML = 'Browser no soportado!';
+           }
+        });
+      </script>
+
+<h6 class="informacion2"> 1er Reto por Juan Pablo Fiestas (juanpablofiestas@gmail.com) </h6>
+
+</body>
+</html>

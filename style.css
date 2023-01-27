@@ -1,0 +1,116 @@
+*{
+    background: white;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 20px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    border: none ;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-top: 20px;
+    text-align: center;
+}
+
+::placeholder { color: #0A3871; }
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje{
+    background: white;
+    background-image: url("imagenes/Logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border: solid ;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 18px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: inline-block;
+    margin: 0 auto;
+}
+
+.mensajeD{
+    background: white;
+    background-image: url("imagenes/muneco.png");
+    background-repeat: no-repeat;
+    border: solid ;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: inline-block;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+}
+
+.btn-encriptar{
+    background-color: #0a3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+    position:absolute;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 18px;
+}
+
+.informacion2{
+    color: #0A3871;
+    font-size: 18px;
+    position: center;
+    margin-left: 350px;
+}
+
